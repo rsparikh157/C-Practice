@@ -1,18 +1,15 @@
 #include <stdio.h>
 int main() {
-    int num1, num2, sum;
+    // Program to add two numbers
+    int a,b,c;
     // Ask the user for two numbers
-    printf("Enter first number: ");
-    scanf("%d", &num1);
-
-    printf("Enter second number: ");
-    scanf("%d", &num2);
-
+    printf("Enter two numbers: ");
+    scanf("%d" "%d", &a, &b);
     // Calculate the sum
-    sum = num1 + num2;
+    c = a+ b;
 
     // Display the result
-    printf("Sum of %d and %d is: %d\n", num1, num2, sum);
+    printf("%d + %d = %d\n", a,b,c);
 
     return 0;
 }
