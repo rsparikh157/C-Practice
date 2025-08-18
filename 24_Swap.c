@@ -2,7 +2,7 @@
 
 int main() {
 
-    int a , b, swap;
+    int a , b, s;
 
 // Input Value 1
     printf("Enter Value 1 (a): ");
@@ -11,12 +11,10 @@ int main() {
     printf("Enter Value 2 (b): ");
     scanf("%d", &b);
 
-    printf("Before swap: a = %d, b = %d\n", a, b);
+    int s  = a;  
+    a = b;     
+    b = s;  
 
-    swap = a;  // store a in temp
-    a = b;     // assign b to a
-    b = swap;  // assign temp to b
-
-    printf("After swap: a = %d, b = %d\n", a, b);
+    printf("a = %d, b = %d", a, b);
     return 0;
 }
